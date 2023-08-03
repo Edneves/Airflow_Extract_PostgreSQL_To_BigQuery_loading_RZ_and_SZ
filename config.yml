@@ -12,16 +12,16 @@ params:
     column_movto: 'metadados_dh_movto'
 
   info_tables:
-    credencial: '/home/edy/Downloads/credencial.json'
-    project_id: 'hopeful-canto-394719'
+    credencial: '/path/chave/credencial.json'
+    project_id: 'Id do projeto GCP'
     location: 'southamerica-east1'
     table_id: 'metadados'
     dataset_rz: 'raw_zone'
     dataset_sz: 'standard_zone'
 
   template_search:
-    search_path: '/home/edy/airflow/dags/deployments/'
-    search_path_global: '/home/edy/airflow/dags/global_modules'
+    search_path: '/path/airflow/dags/deployments/'
+    search_path_global: '/path/airflow/dags/global_modules'
     
 bq_comands:
   insert_sez_metadados:
