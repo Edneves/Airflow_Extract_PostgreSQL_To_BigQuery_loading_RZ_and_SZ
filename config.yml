@@ -1,0 +1,29 @@
+params:
+  connection:
+    database: 'airflow_db'
+    list_columns: ['table_name', 'column_name', 'data_type']
+    query: 'SELECT table_name, column_name, data_type FROM information_schema.columns;'
+    user: 'airflow_user'
+    password: 'airflow_pass'
+    host: '127.0.0.1'
+    port: '5432'
+    granularity: True
+    nr_rows: 500
+    column_movto: 'metadados_dh_movto'
+
+  info_tables:
+    credencial: '/home/edy/Downloads/credencial.json'
+    project_id: 'hopeful-canto-394719'
+    location: 'southamerica-east1'
+    table_id: 'metadados'
+    dataset_rz: 'raw_zone'
+    dataset_sz: 'standard_zone'
+
+  template_search:
+    search_path: '/home/edy/airflow/dags/deployments/'
+    search_path_global: '/home/edy/airflow/dags/global_modules'
+    
+bq_comands:
+  insert_sez_metadados:
+    sql: "sql_files/insert_sez_metadados.sql"
+    params_query: "{% include 'sql_files/insert_sez_metadados.sql' %}"

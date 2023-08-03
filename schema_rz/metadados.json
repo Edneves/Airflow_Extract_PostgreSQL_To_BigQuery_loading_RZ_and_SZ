@@ -1,0 +1,22 @@
+[
+    {
+        "name": "table_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "column_name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "data_type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "metadados_dh_movto",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    }
+]

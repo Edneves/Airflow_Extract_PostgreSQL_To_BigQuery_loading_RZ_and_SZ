@@ -1,0 +1,19 @@
+[
+    {
+        "name": "table_name",
+        "type": "STRING"
+    },
+    {
+        "name": "column_name",
+        "type": "STRING"
+    },
+    {
+        "name": "data_type",
+        "type": "STRING"
+    },
+    {
+        "name": "metadados_dh_movto",
+        "type": "DATETIME",
+        "mode": "REQUIRED"
+    }
+]
